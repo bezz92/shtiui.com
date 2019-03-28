@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway');
+
+html, body {
+     margin: 0px;
+     height: 100%;
+}
+
+body {
+    background-color: #f9eee8;
+    text-align: center;
+}
+
+.loading-icon {
+     position: fixed;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+     background: url("../images/loading.gif") center no-repeat, #f9eee8;
+}
+
+#content {
+     display: flex;
+     height: 100%;
+}
+
+#text {
+     width: 55%;
+}
+
+#image {
+     width: 45%;
+     height: 100%;
+     background: url("../images/alisa-yasin2.jpg") no-repeat;
+     background-size: cover;
+}
+
+h2, h3 {
+     font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+     margin-top: 30%;
+     font-size: 2.5em;
+     font-weight: 200;
+}
+
+li {
+     font-weight: 200;
+}
+
+#russian {
+     font-size: 0.7em;
+}
+
+#korean {
+     font-weight: 1000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#change-text {
+     font-family: 'Pacifico', cursive;
+	list-style: none;
+	margin: 0;
+	font-size: 8em;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+     animation-delay: 2s;
+	animation: textchange 20s infinite;
+}
+
+.change-text-element {
+	margin: 0;
+	line-height: 250px;
+}
+
+@keyframes textchange {
+	0%, 21%, 100% {transform: translate3d(0,0,0);}
+	25%, 46% {transform: translate3d(0, -100%, 0);}
+	50%, 71% {transform: translate3d(0, -200%,0);}
+	75%, 96% {transform: translate3d(0, -100%,0);}
+}
+
+#page-start-changinghead {
+	display: flex;
+	height: 250px;
+	overflow: hidden;
+	justify-content: center;
+}
+
+#link {
+     margin-top: 5%;
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+     #content {
+          flex-direction: column;
+     }
+
+     #text {
+          width: 100%;
+          height: 50%;
+     }
+
+     #image {
+          width: 80%;
+          height: 50%;
+          border-radius: 50%;
+          margin-right: auto;
+          margin-left: auto;
+     }
+
+     h2 {
+          margin-top: 10%;
+          font-size: 1em;
+     }
+
+     #change-text {
+          font-size: 2em;
+     }
+
+     li {
+          font-size: 2em;
+     }
+
+     .change-text-element {
+     	line-height: 100px;
+     }
+
+     #page-start-changinghead {
+     	height: 100px;
+     }
+
+     #russian {
+          font-size: 1.2em;
+     }
+
+     h3 {
+          font-size: 0.8em;
+     }
+}
