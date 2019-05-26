@@ -1,9 +1,32 @@
+a {
+    color: #fff;
+}
+
+article {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 32px;
+    padding: 100px 50px 0 50px;
+    max-width: 100%;
+    width: 500px;
+}
+
 body {
     background-color: #004242;
     color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;  
     text-align: center;
 }
 
 img {
+    display: inline-block;
     max-width: 100%;
+    padding: 100px 0 0 0;
+    width: 500px
+}
+
+section {
+    display: inline-block;
+    min-width: 500px;
 }
